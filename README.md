@@ -25,13 +25,14 @@
 ## 일이 흐르는 순서
 
 ```mermaid
+%%{init: {'theme':'base','themeVariables':{'fontSize':'16px','fontFamily':'Pretendard, Noto Sans KR, sans-serif','primaryColor':'#E4EFE8','primaryTextColor':'#15191A','primaryBorderColor':'#2F7D5A','lineColor':'#5B6962','secondaryColor':'#F6EBDC','tertiaryColor':'#FFFFFF','edgeLabelBackground':'#FFFFFF','clusterBkg':'#F5F7F4','clusterBorder':'#C9D2CB'}}}%%
 flowchart LR
     E["✏️ index.html 수정"] --> P["⬆️ main 에 푸시"]
-    P --> G["⚙️ GitHub Pages 자동 배포<br/>1~2분"]
+    P --> G["⚙️ Pages 자동 배포<br/>1~2분"]
     G --> W["🌐 sweetlabs.co.kr"]
     C["CNAME<br/>도메인 지정"] -.-> G
 
-    classDef top fill:#2F7D5A,stroke:#1E5A3F,color:#fff
+    classDef top fill:#2F7D5A,stroke:#1E5A3F,color:#FFFFFF
     classDef mid fill:#E4EFE8,stroke:#2F7D5A,color:#15191A
     class W top
     class E,P,G,C mid
